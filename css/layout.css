@@ -1,0 +1,179 @@
+@import './variables.css';
+
+/* Header & Nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    padding: 0px 50px;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    counter-reset: item 0;
+    z-index: 12;
+}
+
+.logo a {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xl);
+    font-weight: 700;
+    border: 2px solid var(--green);
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+}
+
+.logo a:hover {
+    background-color: var(--green-tint);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links ol li {
+    margin: 0 5px;
+    position: relative;
+    counter-increment: item 1;
+    font-size: var(--fz-xs);
+}
+
+.nav-links ol li a {
+    padding: 10px;
+    font-family: var(--font-mono);
+    color: var(--lightest-slate);
+}
+
+.nav-links ol li a::before {
+    content: "0" counter(item) ".";
+    margin-right: 5px;
+    color: var(--green);
+    font-size: var(--fz-xxs);
+    text-align: right;
+}
+
+.resume-button {
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-left: 15px;
+    font-size: var(--fz-xs);
+}
+
+.resume-button:hover,
+.resume-button:focus,
+.resume-button:active {
+    background-color: var(--green-tint);
+}
+
+/* Mobile Menu Burger (Hidden on Desktop) */
+.menu-btn {
+    display: none;
+}
+
+/* Main Content Layout */
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 0px 150px;
+}
+
+section {
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+}
+
+.fillHeight {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    color: var(--light-slate);
+}
+
+footer a {
+    color: var(--light-slate);
+}
+
+/* Responsive */
+@media (max-width: 1080px) {
+    main {
+        padding: 0px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0px 50px;
+    }
+
+    header {
+        padding: 0 25px;
+    }
+
+    .nav-links {
+        display: none;
+        /* simple hiding for now, JS would toggle class */
+    }
+
+    .menu-btn {
+        display: block;
+        /* Add burger styles if implementing mobile menu fully */
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0px 25px;
+    }
+}

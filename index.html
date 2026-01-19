@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragan Stamenkovic | Unity Developer</title>
+    <meta name="description"
+        content="Dragan Stamenkovic is a Unity Developer with 9 years of experience visualizing complex systems and building performant applications.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/experience.css">
+    <link rel="stylesheet" href="css/components/projects.css">
+
+    <!-- Fonts (Using system fonts for now as per variables.css, but Google Fonts could be added here) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <a href="#">DS</a>
+            </div>
+            <div class="nav-links">
+                <ol>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+                <a href="#resume" class="resume-button">Resume</a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">
+        <main class="fillHeight">
+
+            <!-- HERO -->
+            <section id="hero">
+                <h1 class="fade-in-entry">Hi, my name is</h1>
+                <h2 class="big-heading fade-in-entry">Dragan Stamenkovic.</h2>
+                <h3 class="big-heading fade-in-entry">I build interactive digital realities.</h3>
+                <p class="fade-in-entry">
+                    I'm a Unity Developer with 9 years of experience across mobile, WebGL, VR/AR, and enterprise
+                    simulation projects.
+                    I specialize in clean architecture, performance optimization, and building scalable systems.
+                </p>
+                <a href="#work" class="email-link fade-in-entry">Check out my work!</a>
+            </section>
+
+            <!-- ABOUT -->
+            <section id="about" data-scroll-reveal="enter bottom">
+                <h2 class="section-heading">About Me</h2>
+                <div class="inner">
+                    <div class="styled-text">
+                        <p>
+                            Hello! I'm Dragan, a Unity Developer passionate about creating polished, performant, and
+                            scalable applications.
+                            My journey started back in 2014, and since then I've had the privilege of working on
+                            everything from
+                            <span class="highlight">mobile games</span> and <span class="highlight">educational
+                                prototypes</span> to
+                            <span class="highlight">VR cleanroom simulations</span> and <span
+                                class="highlight">city-scale digital twins</span>.
+                        </p>
+                        <p>
+                            I specialize in taking unstable codebases and transforming them into clean, testable systems
+                            using principles like
+                            <span class="highlight">SOLID</span>, <span class="highlight">MVC</span>, and efficient
+                            dependency injection with
+                            <span class="highlight">VContainer/Zenject</span>.
+                        </p>
+                        <p>Here are a few technologies I've been working with recently:</p>
+                        <ul class="skills-list">
+                            <li>Unity 3D & 2D</li>
+                            <li>C#</li>
+                            <li>WebGL / Three.js</li>
+                            <li>VR / AR (Oculus, Vive)</li>
+                            <li>GIT / CI/CD</li>
+                            <li>HLSL / Shader Graph</li>
+                        </ul>
+                    </div>
+                    <div class="styled-pic">
+                        <div class="wrapper">
+                            <!-- Placeholder for profile image -->
+                            <img src="./assets/me.jpg" alt="Dragan Stamenkovic" class="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section id="experience" data-scroll-reveal="enter bottom">
+                <h2 class="section-heading">Where I've Worked</h2>
+                <div class="inner">
+                    <div class="tab-list" role="tablist" aria-label="Job tabs">
+                        <button role="tab" aria-selected="true" aria-controls="panel-0" id="tab-0"
+                            class="tab-button active">Locker Live</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-1" id="tab-1"
+                            class="tab-button">Innerspace</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2"
+                            class="tab-button">Smart Visualizer</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3"
+                            class="tab-button">Webelinx</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4"
+                            class="tab-button">Early Career</button>
+                    </div>
+
+                    <div class="tab-panels">
+                        <!-- Locker Live -->
+                        <div id="panel-0" role="tabpanel" tabindex="0" aria-labelledby="tab-0" class="tab-panel active">
+                            <h3>Senior Unity Developer <span class="company">@ <a href="https://www.locker.bet/"
+                                        target="_blank">Locker Live Inc</a></span></h3>
+                            <p class="range">Nov 2023 - Nov 2024</p>
+                            <ul>
+                                <li>Built a live fantasy sports app in Unity using MVC architecture.</li>
+                                <li>Designed a battery-saving system locking FPS at 20 during idle and restoring 60 FPS
+                                    on input.</li>
+                                <li>Integrated real-time chat and geofencing systems to enforce regional legality (US
+                                    markets).</li>
+                                <li><a href="https://youtu.be/RiXw3Vbvsmg" target="_blank" class="inline-link">Reference
+                                        Video</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Innerspace -->
+                        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="tab-panel" hidden>
+                            <h3>Senior Unity Developer <span class="company">@ <a href="https://www.innerspace.eu"
+                                        target="_blank">Innerspace GmbH</a></span></h3>
+                            <p class="range">Aug 2022 - Aug 2023</p>
+                            <ul>
+                                <li>Refactored legacy systems into clean, testable architecture.</li>
+                                <li>Created VR cleanroom simulations and Human Error VR systems.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Smart Visualizer -->
+                        <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="tab-panel" hidden>
+                            <h3>Unity Developer <span class="company">@ <a href="https://svisualizer.com"
+                                        target="_blank">Smart Visualizer</a></span></h3>
+                            <p class="range">Oct 2018 - Jul 2022</p>
+                            <ul>
+                                <li>Developed a City-Scale Digital Twin (Unity WebGL) with custom shaders.</li>
+                                <li>Implemented combined Singleton/MVC patterns to streamline asset loading.</li>
+                                <li>Integrated KTX 2.0 texture compression for optimal memory management.</li>
+                                <li>Key Features: Environmental Simulation (Flood, Sun) and Spatial Analysis tools.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Webelinx -->
+                        <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" class="tab-panel" hidden>
+                            <h3>Unity Developer <span class="company">@ Webelinx</span></h3>
+                            <p class="range">Mar 2017 - Oct 2018</p>
+                            <ul>
+                                <li>Built Unity editor tools for story games, including a node-based storyline system.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Early Career -->
+                        <div id="panel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" class="tab-panel" hidden>
+                            <h3>Junior Unity Developer <span class="company">@ Various</span></h3>
+                            <p class="range">2014 - 2017</p>
+                            <ul>
+                                <li><strong>Upwork (2015-2017):</strong> Built various Unity projects for international
+                                    clients.</li>
+                                <li><strong>Four Story Creative (2016):</strong> Developed educational prototypes (2D/3D
+                                    games).</li>
+                                <li><strong>Naloki (2014-2015):</strong> Created pets games, 2D platformer "Spongy", and
+                                    arena survival game.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORK (Projects) -->
+            <section id="work" data-scroll-reveal="enter bottom">
+                <h2 class="section-heading">Some Things I've Built</h2>
+
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-overline">Featured Project</div>
+                        <h3 class="project-title"><a href="#">City Digital Twin</a></h3>
+                        <div class="project-description">
+                            <p>A high-performance WebGL digital twin application for city-scale data visualization.
+                                Features include flood analysis, sun simulation, and real-time obstacle detection.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Unity</li>
+                            <li>WebGL</li>
+                            <li>HLSL</li>
+                            <li>KTX 2.0</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://svisualizer.com/#/View/083cfba27adffb6" target="_blank"
+                                aria-label="External Link">
+                                <!-- Icon Placeholder -->
+                                🔗 Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="https://svisualizer.com/#/View/083cfba27adffb6" target="_blank">
+                            <div class="img-placeholder"></div> <!-- Need to generate or add an image -->
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card featured inverted">
+                    <div class="project-content">
+                        <div class="project-overline">Featured Project</div>
+                        <h3 class="project-title"><a href="#">Fantasy Sports App</a></h3>
+                        <div class="project-description">
+                            <p>A live fantasy sports mobile application with real-time chat and geofencing compliance
+                                features. Optimized for battery life with dynamic FPS scaling.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>MVC</li>
+                            <li>Zenject</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://youtu.be/RiXw3Vbvsmg" target="_blank" aria-label="Reference Video">
+                                📺 Video
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="img-placeholder"></div>
+                    </div>
+                </div>
+
+                <!-- Other Projects Grid (For WebGL Uploads) -->
+                <h2 class="center-heading">Other Projects</h2>
+                <div class="projects-grid">
+                    <!-- Example of where a WebGL project card would go -->
+                    <div class="project-inner">
+                        <header>
+                            <div class="project-top">
+                                <div class="folder">📂</div>
+                                <div class="project-links">
+                                    <a href="#" aria-label="Play">▶️</a>
+                                </div>
+                            </div>
+                            <h3 class="project-title"><a href="#">WebGL Prototype</a></h3>
+                            <div class="project-description">
+                                <p>A simple WebGL test. Upload your build to the /projects folder to showcase it here.
+                                </p>
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project-tech-list">
+                                <li>Unity</li>
+                                <li>WebGL</li>
+                            </ul>
+                        </footer>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" data-scroll-reveal="enter bottom">
+                <h2 class="section-heading overline">What's Next?</h2>
+                <h2 class="title">Get In Touch</h2>
+                <p>
+                    I'm currently open for new opportunities. Whether you have a question or just want to say hi, I'll
+                    try my best to get back to you!
+                </p>
+                <a href="mailto:dragan.stamenkovic@example.com" class="email-link">Say Hello</a>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <!-- Add LinkedIn/Github/etc icons here -->
+            </div>
+            <div class="credits">
+                <a href="https://github.com/draganstamenkovic" target="_blank">Designed & Built by Dragan
+                    Stamenkovic</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/webgl-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
