@@ -155,6 +155,10 @@
     position: relative;
 }
 
+.project-grid-item {
+    height: 100%;
+}
+
 .project-inner {
     display: flex;
     justify-content: space-between;
@@ -168,7 +172,7 @@
     transition: var(--transition);
 }
 
-.project-inner:hover {
+.project-grid-item:hover .project-inner {
     transform: translateY(-7px);
 }
 
